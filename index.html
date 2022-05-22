@@ -1,0 +1,45 @@
+<head>
+    <title>Favicon Testing</title>
+    <!-- References to switch -->
+    <link id="icon-a" rel="shortcut icon" type="image/png" href="assets/frame_00_delay-0.07s.png" />
+    <link id="icon-b" rel="shortcut icon" type="image/png" href="assets/frame_01_delay-0.07s.png" />
+    <link id="icon-c" rel="shortcut icon" type="image/png" href="assets/frame_02_delay-0.07s.png" />
+    <link id="icon-d" rel="shortcut icon" type="image/png" href="assets/frame_03_delay-0.07s.png" />
+    <link id="icon-e" rel="shortcut icon" type="image/png" href="assets/frame_04_delay-0.07s.png" />
+    <link id="icon-f" rel="shortcut icon" type="image/png" href="assets/frame_05_delay-0.07s.png" />
+    <link id="icon-g" rel="shortcut icon" type="image/png" href="assets/frame_06_delay-0.07s.png" />
+    <link id="icon-h" rel="shortcut icon" type="image/png" href="assets/frame_07_delay-0.07s.png" />
+    <link id="icon-i" rel="shortcut icon" type="image/png" href="assets/frame_08_delay-0.07s.png" />
+    <link id="icon-j" rel="shortcut icon" type="image/png" href="assets/frame_09_delay-0.07s.png" />
+    <link id="icon-k" rel="shortcut icon" type="image/png" href="assets/frame_10_delay-0.07s.png" />
+    <link id="icon-l" rel="shortcut icon" type="image/png" href="assets/frame_11_delay-0.07s.png" />
+    <meta charset="utf-8" />
+</head>
+<body>
+    <script>
+        // Store your current icon
+        var current = 0;
+        var icons = ['assets/frame_00_delay-0.07s.png', 'assets/frame_01_delay-0.07s.png', 'assets/frame_02_delay-0.07s.png', 'assets/frame_03_delay-0.07s.png', 'assets/frame_04_delay-0.07s.png', 'assets/frame_05_delay-0.07s.png', 'assets/frame_06_delay-0.07s.png', 'assets/frame_07_delay-0.07s.png', 'assets/frame_08_delay-0.07s.png', 'assets/frame_09_delay-0.07s.png', 'assets/frame_10_delay-0.07s.png', 'assets/frame_11_delay-0.07s.png'];
+        // Every 2 seconds, switch your icon
+        setInterval(function () {
+            // Determine the next icon
+            var icon = (++current % icons.length);
+            // Grab the URL to use
+            var url = icons[icon];
+            // Update your elements
+            document.getElementById('icon-a').href = url;
+            document.getElementById('icon-b').href = url;
+            document.getElementById('icon-c').href = url;
+            document.getElementById('icon-d').href = url;
+            document.getElementById('icon-e').href = url;
+            document.getElementById('icon-f').href = url;
+            document.getElementById('icon-g').href = url;
+            document.getElementById('icon-h').href = url;
+            document.getElementById('icon-i').href = url;
+            document.getElementById('icon-j').href = url;
+            document.getElementById('icon-k').href = url;
+            document.getElementById('icon-l').href = url;
+            
+        }, 20);
+    </script>
+</body>
